@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/gooblebox.dir/link.d CMakeFiles/gooblebox.dir/src/main.cpp.o -o gooblebox  -Wl,-rpath,/usr/local/lib /usr/lib/x86_64-linux-gnu/libwlroots-0.18.so /usr/lib/x86_64-linux-gnu/libwayland-server.so /usr/local/lib/libxkbcommon.so

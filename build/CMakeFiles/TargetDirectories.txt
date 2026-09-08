@@ -1,0 +1,3 @@
+/home/wa1000/gooblebox/build/CMakeFiles/gooblebox.dir
+/home/wa1000/gooblebox/build/CMakeFiles/edit_cache.dir
+/home/wa1000/gooblebox/build/CMakeFiles/rebuild_cache.dir

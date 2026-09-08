@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/wa1000/gooblebox/build",
+  "command": "/usr/bin/c++ -DWLR_USE_UNSTABLE -isystem /usr/include/wlroots-0.18 -isystem /usr/include/libdrm -isystem /usr/include/pixman-1 -g -std=gnu++17 -pthread -o CMakeFiles/gooblebox.dir/src/main.cpp.o -c /home/wa1000/gooblebox/src/main.cpp",
+  "file": "/home/wa1000/gooblebox/src/main.cpp",
+  "output": "CMakeFiles/gooblebox.dir/src/main.cpp.o"
+}
+]
