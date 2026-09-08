@@ -117,33 +117,28 @@ void compositor::newOutputHandler(wl_listener *listener, void *data) {
     wlr_output *output = static_cast<wlr_output *>(data);
     wlr_output_init_render(output, g_compositor->allocator, g_compositor->render);
 
-    struct wlr_output_state output_state;
-    wlr_output_state_init(&output_state);
+    struct wlr_output_state out_state;
+    wlr_output_state_init(&out_state);
 
-    wlr_output_state_set_enabled(&output_state, true);
+    wlr_output_state_set_enabled(&out_state, true);
 
     struct wlr_output_mode *mode = wlr_output_preferred_mode(output);
     if (mode) {
-        wlr_output_state_set_mode(&output_state, mode);
+        wlr_output_state_set_mode(&out_state, mode);
     }
 
-    wlr_output_commit_state(output, &output_state);
-    wlr_output_state_finish(&output_state);
+    wlr_output_commit_state(output, &out_state);
+    wlr_output_state_finish(&out_state);
 
     wlr_output_layout_add_auto(g_compositor->layout, output);
 
-    // Создаём элемент прямо в списке
     g_compositor->outputs.emplace_back();
-
-    // Получаем ссылку на последний элемент
     output_state& os = g_compositor->outputs.back();
+
     os.output = output;
     os.frame_listen.notify = &compositor::frameHandler;
-
-    // Регистрируем слушатель
     wl_signal_add(&output->events.frame, &os.frame_listen);
 }
-
 
 void compositor::frameHandler(wl_listener *listener, void *data) {
     wlr_output *output = static_cast<wlr_output *>(data);
