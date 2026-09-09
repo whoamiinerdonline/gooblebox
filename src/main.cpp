@@ -104,7 +104,7 @@ public:
         new_output_listener.notify = &compositor::newOutputHandler;
         wl_signal_add(&backend->events.new_output, &new_output_listener);
 
-        new_input_listener.notify = &compositor::newOutputHandler;
+        new_input_listener.notify = &compositor::newInputHandler;
         wl_signal_add(&backend->events.new_input, &new_input_listener);
 
         g_compositor = this;

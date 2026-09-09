@@ -227,4 +227,10 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: \
  /usr/include/wlroots-0.18/wlr/render/allocator.h \
  /usr/include/wlroots-0.18/wlr/util/log.h /usr/include/string.h \
  /usr/include/strings.h \
- /usr/include/wlroots-0.18/wlr/types/wlr_output_layout.h
+ /usr/include/wlroots-0.18/wlr/types/wlr_output_layout.h \
+ /usr/include/wlroots-0.18/wlr/types/wlr_input_device.h \
+ /usr/include/wlroots-0.18/wlr/types/wlr_keyboard.h \
+ /usr/local/include/xkbcommon/xkbcommon.h \
+ /usr/local/include/xkbcommon/xkbcommon-names.h \
+ /usr/local/include/xkbcommon/xkbcommon-keysyms.h \
+ /usr/local/include/xkbcommon/xkbcommon-compat.h

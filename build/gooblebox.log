@@ -298,5 +298,3 @@
 [render/swapchain.c:106] Allocating new swapchain buffer
 [render/allocator/gbm.c:144] Allocated 1440x900 GBM buffer with format XR24 (0x34325258), modifier X_TILED (0x0100000000000001)
 [render/gles2/renderer.c:158] Created GL FBO for buffer 1440x900
-[backend/drm/atomic.c:79] connector eDP-1: Atomic commit failed: Device or resource busy
-[backend/drm/atomic.c:84] (Atomic commit flags: PAGE_FLIP_EVENT | ATOMIC_NONBLOCK)

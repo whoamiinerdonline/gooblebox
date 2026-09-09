@@ -33,7 +33,6 @@ gooblebox: \
   /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o \
   /lib/x86_64-linux-gnu/libdrm.so.2 \
-  /usr/local/lib/libxkbcommon.so \
   /lib/x86_64-linux-gnu/libpixman-1.so.0 \
   /lib/x86_64-linux-gnu/libm.so.6 \
   /lib/x86_64-linux-gnu/libEGL.so.1 \
@@ -144,8 +143,6 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o:
 
 /lib/x86_64-linux-gnu/libdrm.so.2:
-
-/usr/local/lib/libxkbcommon.so:
 
 /lib/x86_64-linux-gnu/libpixman-1.so.0:
 

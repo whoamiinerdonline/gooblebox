@@ -9,10 +9,15 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: /home/wa1000/gooblebox/src/main.cpp \
   /usr/include/asm-generic/int-ll64.h \
   /usr/include/asm-generic/posix_types.h \
   /usr/include/asm-generic/types.h \
+  /usr/include/c++/14/backward/auto_ptr.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
+  /usr/include/c++/14/bits/align.h \
   /usr/include/c++/14/bits/alloc_traits.h \
+  /usr/include/c++/14/bits/allocated_ptr.h \
   /usr/include/c++/14/bits/allocator.h \
+  /usr/include/c++/14/bits/atomic_base.h \
+  /usr/include/c++/14/bits/atomic_lockfree_defines.h \
   /usr/include/c++/14/bits/basic_ios.h \
   /usr/include/c++/14/bits/basic_ios.tcc \
   /usr/include/c++/14/bits/basic_string.h \
@@ -32,6 +37,7 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: /home/wa1000/gooblebox/src/main.cpp \
   /usr/include/c++/14/bits/invoke.h \
   /usr/include/c++/14/bits/ios_base.h \
   /usr/include/c++/14/bits/istream.tcc \
+  /usr/include/c++/14/bits/list.tcc \
   /usr/include/c++/14/bits/locale_classes.h \
   /usr/include/c++/14/bits/locale_classes.tcc \
   /usr/include/c++/14/bits/locale_facets.h \
@@ -50,6 +56,9 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: /home/wa1000/gooblebox/src/main.cpp \
   /usr/include/c++/14/bits/range_access.h \
   /usr/include/c++/14/bits/refwrap.h \
   /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/shared_ptr.h \
+  /usr/include/c++/14/bits/shared_ptr_atomic.h \
+  /usr/include/c++/14/bits/shared_ptr_base.h \
   /usr/include/c++/14/bits/specfun.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/stl_algobase.h \
@@ -59,13 +68,17 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: /home/wa1000/gooblebox/src/main.cpp \
   /usr/include/c++/14/bits/stl_iterator.h \
   /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/14/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14/bits/stl_list.h \
   /usr/include/c++/14/bits/stl_pair.h \
+  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/14/bits/stl_tempbuf.h \
   /usr/include/c++/14/bits/stl_uninitialized.h \
   /usr/include/c++/14/bits/stl_vector.h \
   /usr/include/c++/14/bits/streambuf.tcc \
   /usr/include/c++/14/bits/streambuf_iterator.h \
   /usr/include/c++/14/bits/string_view.tcc \
   /usr/include/c++/14/bits/stringfwd.h \
+  /usr/include/c++/14/bits/unique_ptr.h \
   /usr/include/c++/14/bits/uses_allocator.h \
   /usr/include/c++/14/bits/uses_allocator_args.h \
   /usr/include/c++/14/bits/utility.h \
@@ -76,6 +89,7 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: /home/wa1000/gooblebox/src/main.cpp \
   /usr/include/c++/14/clocale \
   /usr/include/c++/14/cmath \
   /usr/include/c++/14/concepts \
+  /usr/include/c++/14/cstdarg \
   /usr/include/c++/14/cstddef \
   /usr/include/c++/14/cstdio \
   /usr/include/c++/14/cstdlib \
@@ -84,8 +98,10 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: /home/wa1000/gooblebox/src/main.cpp \
   /usr/include/c++/14/debug/assertions.h \
   /usr/include/c++/14/debug/debug.h \
   /usr/include/c++/14/exception \
+  /usr/include/c++/14/ext/aligned_buffer.h \
   /usr/include/c++/14/ext/alloc_traits.h \
   /usr/include/c++/14/ext/atomicity.h \
+  /usr/include/c++/14/ext/concurrence.h \
   /usr/include/c++/14/ext/numeric_traits.h \
   /usr/include/c++/14/ext/string_conversions.h \
   /usr/include/c++/14/ext/type_traits.h \
@@ -95,9 +111,13 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: /home/wa1000/gooblebox/src/main.cpp \
   /usr/include/c++/14/iostream \
   /usr/include/c++/14/istream \
   /usr/include/c++/14/limits \
+  /usr/include/c++/14/list \
   /usr/include/c++/14/math.h \
+  /usr/include/c++/14/memory \
   /usr/include/c++/14/new \
   /usr/include/c++/14/ostream \
+  /usr/include/c++/14/pstl/execution_defs.h \
+  /usr/include/c++/14/pstl/glue_memory_defs.h \
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/stdexcept \
   /usr/include/c++/14/streambuf \
@@ -152,11 +172,14 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: /home/wa1000/gooblebox/src/main.cpp \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/include/wlroots-0.18/wlr/backend.h \
+  /usr/include/wlroots-0.18/wlr/render/allocator.h \
   /usr/include/wlroots-0.18/wlr/render/dmabuf.h \
   /usr/include/wlroots-0.18/wlr/render/pass.h \
   /usr/include/wlroots-0.18/wlr/render/wlr_renderer.h \
   /usr/include/wlroots-0.18/wlr/render/wlr_texture.h \
   /usr/include/wlroots-0.18/wlr/types/wlr_buffer.h \
+  /usr/include/wlroots-0.18/wlr/types/wlr_input_device.h \
+  /usr/include/wlroots-0.18/wlr/types/wlr_keyboard.h \
   /usr/include/wlroots-0.18/wlr/types/wlr_output.h \
   /usr/include/wlroots-0.18/wlr/types/wlr_output_layout.h \
   /usr/include/wlroots-0.18/wlr/util/addon.h \
@@ -258,7 +281,11 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: /home/wa1000/gooblebox/src/main.cpp \
   /usr/lib/linux/uapi/x86/asm/errno.h \
   /usr/lib/linux/uapi/x86/asm/posix_types.h \
   /usr/lib/linux/uapi/x86/asm/posix_types_64.h \
-  /usr/lib/linux/uapi/x86/asm/types.h
+  /usr/lib/linux/uapi/x86/asm/types.h \
+  /usr/local/include/xkbcommon/xkbcommon-compat.h \
+  /usr/local/include/xkbcommon/xkbcommon-keysyms.h \
+  /usr/local/include/xkbcommon/xkbcommon-names.h \
+  /usr/local/include/xkbcommon/xkbcommon.h
 
 gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
   /lib/x86_64-linux-gnu/libGLESv2.so.2 \
@@ -379,8 +406,6 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /lib/x86_64-linux-gnu/libdisplay-info.so.2:
 
-/lib/x86_64-linux-gnu/libc.so.6:
-
 /lib/x86_64-linux-gnu/libmtdev.so.1:
 
 /lib/x86_64-linux-gnu/libatomic.so.1:
@@ -391,29 +416,37 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /lib/x86_64-linux-gnu/libEGL.so.1:
 
-/usr/include/linux/posix_types.h:
+/usr/local/include/xkbcommon/xkbcommon-compat.h:
 
-/usr/include/c++/14/bits/locale_classes.tcc:
+/usr/lib/linux/uapi/x86/asm/posix_types.h:
 
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+/usr/lib/linux/uapi/x86/asm/bitsperlong.h:
 
-/usr/include/features-time64.h:
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
-/usr/include/c++/14/bits/localefwd.h:
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
-/usr/include/ctype.h:
+/usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/lib/x86_64-linux-gnu/Scrt1.o:
+/usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h:
 
-/usr/include/c++/14/typeinfo:
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/c++/14/tr1/exp_integral.tcc:
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/c++/14/tr1/legendre_function.tcc:
+/usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h:
 
-/usr/include/x86_64-linux-gnu/bits/locale.h:
+/lib/x86_64-linux-gnu/libgobject-2.0.so.0:
 
-/usr/include/c++/14/tr1/beta_function.tcc:
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_base.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h:
 
 /lib/x86_64-linux-gnu/libseat.so.1:
 
@@ -445,9 +478,11 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/c++/14/ostream:
 
-/usr/include/c++/14/new:
+/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h:
 
-/usr/include/linux/stddef.h:
+/usr/include/c++/14/clocale:
+
+/usr/include/c++/14/new:
 
 /usr/include/wayland-version.h:
 
@@ -464,10 +499,6 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 /lib/x86_64-linux-gnu/libm.so.6:
 
 /usr/include/c++/14/iosfwd:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/c++/14/bits/streambuf.tcc:
 
@@ -489,27 +520,31 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/c++/14/cstddef:
 
+/usr/include/c++/14/cstdarg:
+
+/usr/include/c++/14/bits/unique_ptr.h:
+
 /usr/include/c++/14/cmath:
 
 /usr/include/c++/14/bits/locale_classes.h:
 
-/usr/include/c++/14/tr1/hypergeometric.tcc:
+/usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h:
 
-/usr/include/c++/14/debug/debug.h:
+/usr/include/c++/14/cerrno:
 
 /usr/include/errno.h:
 
 /usr/include/c++/14/bits/version.h:
 
-/usr/include/c++/14/string:
-
-/usr/include/c++/14/bits/uses_allocator_args.h:
-
-/usr/include/c++/14/tuple:
+/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h:
 
 /usr/include/c++/14/bits/vector.tcc:
 
-/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h:
+/usr/local/include/xkbcommon/xkbcommon.h:
+
+/usr/include/c++/14/string:
+
+/usr/include/c++/14/bits/uses_allocator_args.h:
 
 /usr/include/c++/14/bits/streambuf_iterator.h:
 
@@ -521,19 +556,25 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/c++/14/bits/stl_bvector.h:
 
-/lib/x86_64-linux-gnu/libxcb-shm.so.0:
+/usr/include/linux/stddef.h:
 
-/usr/include/c++/14/bits/stl_uninitialized.h:
+/usr/include/c++/14/bits/stl_tempbuf.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/usr/include/c++/14/bits/invoke.h:
+/usr/lib/linux/uapi/x86/asm/posix_types_64.h:
 
-/usr/include/c++/14/concepts:
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/c++/14/bits/exception.h:
+/usr/include/c++/14/bits/stl_iterator_base_types.h:
 
-/usr/include/c++/14/cctype:
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/lib/x86_64-linux-gnu/libpcre2-8.so.0:
+
+/lib/x86_64-linux-gnu/libgbm.so.1:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/c++/14/streambuf:
 
@@ -549,13 +590,19 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/include/c++/14/ext/atomicity.h:
+/usr/include/c++/14/tr1/legendre_function.tcc:
 
-/usr/include/c++/14/limits:
+/usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/c++/14/bits/functional_hash.h:
+/usr/include/c++/14/concepts:
+
+/usr/include/c++/14/bits/exception.h:
+
+/usr/include/c++/14/cctype:
 
 /usr/include/c++/14/bits/cxxabi_forced.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/14/bits/cpp_type_traits.h:
 
@@ -567,65 +614,79 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/pthread.h:
 
-/lib/x86_64-linux-gnu/libxcb-xinput.so.0:
-
-/usr/include/c++/14/stdexcept:
-
-/usr/include/c++/14/tr1/special_function_util.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/c++/14/bits/memory_resource.h:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h:
-
-/usr/include/c++/14/bits/locale_facets.h:
-
-/usr/include/c++/14/bits/basic_string.h:
-
-/usr/include/c++/14/tr1/riemann_zeta.tcc:
-
-/usr/include/c++/14/bits/alloc_traits.h:
+/usr/include/c++/14/ext/concurrence.h:
 
 /usr/include/c++/14/bits/charconv.h:
 
 /usr/include/c++/14/bits/basic_ios.tcc:
 
+/lib/x86_64-linux-gnu/libc.so.6:
+
+/usr/include/c++/14/pstl/glue_memory_defs.h:
+
 /usr/include/c++/14/bits/nested_exception.h:
 
-/lib/x86_64-linux-gnu/libexpat.so.1:
+/lib/x86_64-linux-gnu/libxcb-shm.so.0:
 
-/usr/include/features.h:
+/usr/include/c++/14/bits/stl_uninitialized.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/14/bits/atomic_base.h:
+
+/usr/local/include/xkbcommon/xkbcommon-names.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/14/tr1/beta_function.tcc:
+
+/usr/include/c++/14/bits/shared_ptr_base.h:
+
+/lib/x86_64-linux-gnu/libxcb-present.so.0:
+
+/usr/include/c++/14/vector:
+
+/usr/include/c++/14/ext/atomicity.h:
+
+/usr/include/c++/14/limits:
+
+/usr/include/c++/14/bits/functional_hash.h:
 
 /usr/include/c++/14/bits/ptr_traits.h:
 
 /usr/include/alloca.h:
 
-/usr/include/inttypes.h:
+/usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/c++/14/pstl/execution_defs.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/c++/14/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/14/bits/basic_ios.h:
+
+/usr/include/c++/14/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/14/bits/std_abs.h:
+
+/usr/include/linux/sched/types.h:
+
+/usr/include/c++/14/bits/alloc_traits.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
 
 /usr/include/c++/14/bit:
 
+/usr/include/c++/14/memory:
+
 /usr/include/c++/14/bits/stl_function.h:
 
 /usr/include/c++/14/bits/predefined_ops.h:
-
-/usr/include/c++/14/type_traits:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/c++/14/bits/char_traits.h:
-
-/usr/include/c++/14/istream:
-
-/lib/x86_64-linux-gnu/libmvec.so.1:
-
-/usr/include/stdlib.h:
-
-/usr/include/c++/14/cstdio:
-
-/usr/include/c++/14/bits/utility.h:
 
 /usr/lib/x86_64-linux-gnu/libm.so:
 
@@ -637,13 +698,45 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/c++/14/backward/binders.h:
 
-/usr/include/c++/14/bits/specfun.h:
+/usr/include/c++/14/tr1/exp_integral.tcc:
 
-/lib/x86_64-linux-gnu/libxcb-present.so.0:
+/usr/lib/x86_64-linux-gnu/Scrt1.o:
 
-/usr/include/c++/14/vector:
+/usr/include/c++/14/typeinfo:
 
-/usr/include/c++/14/bits/basic_ios.h:
+/usr/include/c++/14/list:
+
+/usr/include/c++/14/bits/char_traits.h:
+
+/usr/include/c++/14/bits/memory_resource.h:
+
+/usr/include/c++/14/bits/locale_facets.h:
+
+/usr/include/c++/14/bits/basic_string.h:
+
+/usr/include/c++/14/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/14/bits/invoke.h:
+
+/usr/include/c++/14/istream:
+
+/lib/x86_64-linux-gnu/libmvec.so.1:
+
+/usr/include/stdlib.h:
+
+/usr/include/c++/14/cstdio:
+
+/usr/include/c++/14/bits/utility.h:
+
+/usr/include/c++/14/bits/locale_classes.tcc:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/c++/14/backward/auto_ptr.h:
+
+/usr/local/include/xkbcommon/xkbcommon-keysyms.h:
 
 /usr/include/c++/14/bits/ios_base.h:
 
@@ -653,19 +746,29 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/c++/14/bits/ostream_insert.h:
 
+/usr/include/c++/14/bits/specfun.h:
+
+/usr/include/c++/14/bits/list.tcc:
+
 /usr/include/c++/14/bits/stringfwd.h:
 
 /usr/include/c++/14/bits/exception_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/c++/14/bits/locale_facets.tcc:
+
+/usr/include/c++/14/ext/aligned_buffer.h:
+
+/usr/include/c++/14/bits/align.h:
 
 /usr/include/c++/14/bits/concept_check.h:
 
 /usr/include/c++/14/bits/ostream.tcc:
 
-/usr/include/c++/14/bits/uses_allocator.h:
+/usr/include/c++/14/bits/stl_construct.h:
 
-/usr/include/c++/14/bits/memoryfwd.h:
-
-/usr/include/c++/14/tr1/modified_bessel_func.tcc:
+/usr/include/c++/14/bits/stl_list.h:
 
 /home/wa1000/gooblebox/src/main.cpp:
 
@@ -673,21 +776,25 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/lib/linux/uapi/x86/asm/posix_types.h:
+/usr/include/c++/14/bits/uses_allocator.h:
 
-/usr/include/c++/14/bits/stl_construct.h:
+/usr/include/c++/14/bits/localefwd.h:
+
+/usr/include/c++/14/bits/memoryfwd.h:
 
 /usr/include/c++/14/bits/range_access.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h:
-
 /usr/include/c++/14/bits/refwrap.h:
+
+/usr/include/c++/14/bits/shared_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/c++/14/bits/shared_ptr_atomic.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
@@ -695,29 +802,43 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/wlroots-0.18/wlr/util/addon.h:
 
-/usr/include/c++/14/tr1/poly_hermite.tcc:
+/usr/include/c++/14/debug/debug.h:
+
+/usr/include/c++/14/tr1/hypergeometric.tcc:
+
+/usr/include/c++/14/tr1/modified_bessel_func.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
-/usr/include/c++/14/bits/stl_iterator_base_types.h:
+/usr/include/c++/14/tr1/poly_hermite.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+/lib/x86_64-linux-gnu/libxcb-xinput.so.0:
 
-/lib/x86_64-linux-gnu/libpcre2-8.so.0:
+/usr/include/c++/14/stdexcept:
 
-/lib/x86_64-linux-gnu/libgbm.so.1:
+/usr/include/c++/14/tr1/special_function_util.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/include/c++/14/bits/std_abs.h:
+/usr/include/c++/14/tuple:
 
-/usr/include/linux/sched/types.h:
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/ctype.h:
+
+/usr/include/features-time64.h:
+
+/lib/x86_64-linux-gnu/libexpat.so.1:
+
+/usr/include/features.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/linux/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/lib/linux/uapi/x86/asm/posix_types_64.h:
 
 /usr/include/locale.h:
 
@@ -731,9 +852,9 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/pixman-1/pixman-version.h:
 
-/usr/include/endian.h:
-
 /usr/include/stdint.h:
+
+/usr/include/endian.h:
 
 /usr/include/pixman-1/pixman.h:
 
@@ -765,6 +886,8 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/wlroots-0.18/wlr/backend.h:
 
+/usr/include/wlroots-0.18/wlr/render/allocator.h:
+
 /lib/x86_64-linux-gnu/libwacom.so.9:
 
 /usr/include/c++/14/debug/assertions.h:
@@ -785,6 +908,16 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/include/c++/14/type_traits:
+
+/usr/include/wlroots-0.18/wlr/types/wlr_keyboard.h:
+
+/usr/include/c++/14/tr1/ell_integral.tcc:
+
+/usr/include/c++/14/bits/move.h:
+
+/usr/include/wlroots-0.18/wlr/util/log.h:
+
 /lib/x86_64-linux-gnu/libcap.so.2:
 
 /usr/include/wlroots-0.18/wlr/types/wlr_output.h:
@@ -793,21 +926,13 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/wlroots-0.18/wlr/types/wlr_output_layout.h:
 
-/usr/include/c++/14/tr1/ell_integral.tcc:
+/usr/lib/linux/uapi/x86/asm/errno.h:
 
-/usr/include/c++/14/bits/move.h:
+/usr/include/stdio.h:
 
-/usr/include/wlroots-0.18/wlr/util/log.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
+/usr/include/wlroots-0.18/wlr/util/box.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/c++/14/bits/locale_facets.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
@@ -821,8 +946,6 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
@@ -831,7 +954,7 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h:
 
-/usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h:
+/usr/include/c++/14/bits/allocated_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -845,8 +968,6 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
-
 /usr/include/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
@@ -857,13 +978,15 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+/usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
@@ -871,17 +994,13 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+/usr/include/wlroots-0.18/wlr/types/wlr_input_device.h:
 
-/usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h:
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h:
 
@@ -903,13 +1022,9 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h:
 
-/usr/include/stdio.h:
-
-/usr/include/wlroots-0.18/wlr/util/box.h:
-
-/usr/lib/linux/uapi/x86/asm/errno.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
@@ -926,37 +1041,3 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 /usr/include/wlroots-0.18/wlr/types/wlr_buffer.h:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h:
-
-/usr/include/c++/14/cerrno:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_base.h:
-
-/usr/include/c++/14/clocale:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/lib/x86_64-linux-gnu/libgobject-2.0.so.0:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h:
-
-/usr/lib/linux/uapi/x86/asm/bitsperlong.h:
