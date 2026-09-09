@@ -91,6 +91,7 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: /home/wa1000/gooblebox/src/main.cpp \
   /usr/include/c++/14/concepts \
   /usr/include/c++/14/cstdarg \
   /usr/include/c++/14/cstddef \
+  /usr/include/c++/14/cstdint \
   /usr/include/c++/14/cstdio \
   /usr/include/c++/14/cstdlib \
   /usr/include/c++/14/cwchar \
@@ -178,13 +179,19 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: /home/wa1000/gooblebox/src/main.cpp \
   /usr/include/wlroots-0.18/wlr/render/wlr_renderer.h \
   /usr/include/wlroots-0.18/wlr/render/wlr_texture.h \
   /usr/include/wlroots-0.18/wlr/types/wlr_buffer.h \
+  /usr/include/wlroots-0.18/wlr/types/wlr_cursor.h \
   /usr/include/wlroots-0.18/wlr/types/wlr_input_device.h \
   /usr/include/wlroots-0.18/wlr/types/wlr_keyboard.h \
   /usr/include/wlroots-0.18/wlr/types/wlr_output.h \
   /usr/include/wlroots-0.18/wlr/types/wlr_output_layout.h \
+  /usr/include/wlroots-0.18/wlr/types/wlr_pointer.h \
+  /usr/include/wlroots-0.18/wlr/types/wlr_seat.h \
+  /usr/include/wlroots-0.18/wlr/types/wlr_xcursor_manager.h \
   /usr/include/wlroots-0.18/wlr/util/addon.h \
   /usr/include/wlroots-0.18/wlr/util/box.h \
+  /usr/include/wlroots-0.18/wlr/util/edges.h \
   /usr/include/wlroots-0.18/wlr/util/log.h \
+  /usr/include/wlroots-0.18/wlr/xcursor.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
@@ -448,6 +455,18 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h:
 
+/usr/lib/linux/uapi/x86/asm/types.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/atomic_word.h:
+
+/lib/x86_64-linux-gnu/libpcre2-8.so.0:
+
+/lib/x86_64-linux-gnu/libgbm.so.1:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
 /lib/x86_64-linux-gnu/libseat.so.1:
 
 /lib/x86_64-linux-gnu/liblcms2.so.2:
@@ -536,10 +555,6 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/c++/14/bits/version.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h:
-
-/usr/include/c++/14/bits/vector.tcc:
-
 /usr/local/include/xkbcommon/xkbcommon.h:
 
 /usr/include/c++/14/string:
@@ -562,19 +577,9 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/usr/lib/linux/uapi/x86/asm/posix_types_64.h:
-
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
 /usr/include/c++/14/bits/stl_iterator_base_types.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/lib/x86_64-linux-gnu/libpcre2-8.so.0:
-
-/lib/x86_64-linux-gnu/libgbm.so.1:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /usr/include/c++/14/streambuf:
 
@@ -590,6 +595,12 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/asm-generic/errno-base.h:
 
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/wlroots-0.18/wlr/xcursor.h:
+
+/usr/include/c++/14/bits/exception_defines.h:
+
 /usr/include/c++/14/tr1/legendre_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
@@ -599,6 +610,14 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 /usr/include/c++/14/bits/exception.h:
 
 /usr/include/c++/14/cctype:
+
+/usr/include/wlroots-0.18/wlr/types/wlr_cursor.h:
+
+/usr/lib/linux/uapi/x86/asm/posix_types_64.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/wlroots-0.18/wlr/util/edges.h:
 
 /usr/include/c++/14/bits/cxxabi_forced.h:
 
@@ -682,6 +701,8 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/c++/14/bit:
 
+/usr/include/c++/14/cstdint:
+
 /usr/include/c++/14/memory:
 
 /usr/include/c++/14/bits/stl_function.h:
@@ -698,15 +719,15 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/c++/14/backward/binders.h:
 
-/usr/include/c++/14/tr1/exp_integral.tcc:
-
-/usr/lib/x86_64-linux-gnu/Scrt1.o:
-
-/usr/include/c++/14/typeinfo:
-
 /usr/include/c++/14/list:
 
 /usr/include/c++/14/bits/char_traits.h:
+
+/usr/lib/x86_64-linux-gnu/crtn.o:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/c++/14/bits/hash_bytes.h:
 
 /usr/include/c++/14/bits/memory_resource.h:
 
@@ -784,6 +805,10 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 
 /usr/include/c++/14/bits/range_access.h:
 
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/c++/14/exception:
+
 /usr/include/c++/14/bits/refwrap.h:
 
 /usr/include/c++/14/bits/shared_ptr.h:
@@ -795,6 +820,12 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 /usr/include/c++/14/bits/shared_ptr_atomic.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/14/tr1/exp_integral.tcc:
+
+/usr/lib/x86_64-linux-gnu/Scrt1.o:
+
+/usr/include/c++/14/typeinfo:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
@@ -821,8 +852,6 @@ gooblebox: /lib/x86_64-linux-gnu/libEGL.so.1 \
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/c++/14/tuple:
-
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/ctype.h:
 
@@ -882,6 +911,8 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/wayland-server.h:
 
+/usr/include/wlroots-0.18/wlr/types/wlr_seat.h:
+
 /usr/include/wayland-util.h:
 
 /usr/include/wlroots-0.18/wlr/backend.h:
@@ -902,11 +933,9 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/lib/x86_64-linux-gnu/crtn.o:
+/usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h:
 
-/usr/include/c++/14/bits/hash_bytes.h:
-
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+/usr/include/wlroots-0.18/wlr/types/wlr_buffer.h:
 
 /usr/include/c++/14/type_traits:
 
@@ -925,6 +954,18 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 /lib/x86_64-linux-gnu/libXau.so.6:
 
 /usr/include/wlroots-0.18/wlr/types/wlr_output_layout.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h:
+
+/usr/include/c++/14/bits/vector.tcc:
+
+/usr/include/wlroots-0.18/wlr/types/wlr_pointer.h:
+
+/usr/include/wlroots-0.18/wlr/types/wlr_xcursor_manager.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/lib/linux/uapi/x86/asm/errno.h:
 
@@ -984,10 +1025,6 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
-/usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
@@ -1012,10 +1049,6 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/c++/14/bits/exception_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
 /usr/lib/x86_64-linux-gnu/libwayland-server.so:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
@@ -1029,15 +1062,3 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/c++/14/exception:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/lib/linux/uapi/x86/asm/types.h:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/atomic_word.h:
-
-/usr/include/wlroots-0.18/wlr/types/wlr_buffer.h:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h:

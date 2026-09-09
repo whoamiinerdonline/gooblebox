@@ -13,17 +13,24 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h \
  /usr/include/c++/14/pstl/pstl_config.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
- /usr/include/c++/14/bits/version.h /usr/include/c++/14/iostream \
- /usr/include/c++/14/bits/requires_hosted.h /usr/include/c++/14/ostream \
- /usr/include/c++/14/ios /usr/include/c++/14/iosfwd \
- /usr/include/c++/14/bits/stringfwd.h \
+ /usr/include/c++/14/bits/version.h /usr/include/c++/14/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/14/iostream /usr/include/c++/14/bits/requires_hosted.h \
+ /usr/include/c++/14/ostream /usr/include/c++/14/ios \
+ /usr/include/c++/14/iosfwd /usr/include/c++/14/bits/stringfwd.h \
  /usr/include/c++/14/bits/memoryfwd.h /usr/include/c++/14/bits/postypes.h \
  /usr/include/c++/14/cwchar /usr/include/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
@@ -44,10 +51,7 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h \
  /usr/include/c++/14/clocale /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/14/cctype \
- /usr/include/ctype.h /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/ctype.h /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/c++/14/bits/ios_base.h /usr/include/c++/14/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h \
@@ -121,8 +125,7 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: \
  /usr/include/c++/14/ext/string_conversions.h /usr/include/c++/14/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/include/x86_64-linux-gnu/sys/types.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
@@ -167,11 +170,7 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: \
  /usr/include/c++/14/bits/stl_tempbuf.h \
  /usr/include/c++/14/bits/stl_uninitialized.h \
  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
- /usr/include/c++/14/bits/align.h \
- /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/c++/14/bits/unique_ptr.h \
+ /usr/include/c++/14/bits/align.h /usr/include/c++/14/bits/unique_ptr.h \
  /usr/include/c++/14/bits/shared_ptr.h \
  /usr/include/c++/14/bits/shared_ptr_base.h \
  /usr/include/c++/14/ext/concurrence.h \
@@ -184,7 +183,8 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/cstdarg \
- /usr/include/wayland-server.h /usr/include/wayland-server-core.h \
+ /usr/include/wayland-server-protocol.h /usr/include/wayland-server.h \
+ /usr/include/wayland-server-core.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
  /usr/include/wayland-util.h /usr/include/c++/14/math.h \
  /usr/include/c++/14/cmath /usr/include/math.h \
@@ -216,7 +216,7 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: \
  /usr/include/wlroots-0.18/wlr/backend.h \
  /usr/include/wlroots-0.18/wlr/types/wlr_output.h \
  /usr/include/pixman-1/pixman.h /usr/include/pixman-1/pixman-version.h \
- /usr/include/wayland-server-protocol.h /usr/include/wayland-util.h \
+ /usr/include/wayland-util.h \
  /usr/include/wlroots-0.18/wlr/render/wlr_renderer.h \
  /usr/include/wlroots-0.18/wlr/render/pass.h \
  /usr/include/wlroots-0.18/wlr/util/box.h \
@@ -233,4 +233,10 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: \
  /usr/local/include/xkbcommon/xkbcommon.h \
  /usr/local/include/xkbcommon/xkbcommon-names.h \
  /usr/local/include/xkbcommon/xkbcommon-keysyms.h \
- /usr/local/include/xkbcommon/xkbcommon-compat.h
+ /usr/local/include/xkbcommon/xkbcommon-compat.h \
+ /usr/include/wlroots-0.18/wlr/types/wlr_cursor.h \
+ /usr/include/wlroots-0.18/wlr/types/wlr_xcursor_manager.h \
+ /usr/include/wlroots-0.18/wlr/xcursor.h \
+ /usr/include/wlroots-0.18/wlr/util/edges.h \
+ /usr/include/wlroots-0.18/wlr/types/wlr_seat.h \
+ /usr/include/wlroots-0.18/wlr/types/wlr_pointer.h

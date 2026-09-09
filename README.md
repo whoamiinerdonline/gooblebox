@@ -1,24 +1,62 @@
-Gooblebox
+# Gooblebox
 
-Gooblebox — это Wayland-композитор, реализующий идею фрактальных тайловых рабочих сред. Проект вдохновлён эпизодом «Рика и Морти», где в космическом корабле существовала микровселенная.
-Концепция
+**Gooblebox** is a Wayland compositor implementing the concept of **fractal tiling window environments**. 
+Unlike standard desktop environments, Gooblebox arranges workspaces inside a 3D scene, allowing users to nest workspaces within other workspaces infinitely, complete with fluid transitions and full 3D rotation.
 
-    Тайловый менеджер окон с автоматической раскладкой.
+---
 
-    Рабочие столы (workspaces) могут быть вложенными друг в друга (фрактальность).
+## Core Concepts
 
-    Трёхмерное пространство: рабочие столы могут располагаться в 3D-сцене, поддерживается вращение и навигация.
+* **Fractal Workspaces**: Workspaces can be nested inside other workspaces infinitely. Every workspace acts as an independent "microverse" containing its own windows and sub-workspaces.
+* **Automated Tiling**: Windows within any given workspace layer are automatically arranged using a dynamic tiling engine.
+* **3D Space Navigation**: The entire desktop environment exists as a 3D scene. Users can rotate, zoom, and navigate between different workspace depths.
+* **Fluid Transitions**: Spatial shifts and deep-nesting navigation are accompanied by smooth visual animations.
 
-    Каждый рабочий стол — это отдельная «микровселенная» со своими окнами и вложенными столами.
+---
 
-    Плавные анимации переключений и переходов.
+## Technical Stack
 
-Технологии
+Gooblebox is built from the ground up for modern Linux graphics subsystems using the following technologies:
 
-    Язык: C++17
+* **Language**: C++17
+* **Windowing System**: Wayland (via `wlroots`)
+* **Graphics API**: OpenGL ES 2.0 / EGL
+* **Build System**: CMake
 
-    Графическая подсистема: wlroots (Wayland, DRM, OpenGL)
+### Key Dependencies
+* `libwlroots`
+* `libwayland`
+* `libxkbcommon`
+* `libdrm`
+* `libegl`
+* `libgles2`
+* `libseat`
 
-    Сборка: CMake
+---
 
-    Зависимости: libwlroots, libwayland, libxkbcommon, libdrm, libegl, libgles2, libseat
+## Building from Source
+
+### Prerequisites
+
+Ensure you have a C++17 compatible compiler, CMake, and the development headers for all key dependencies installed via your distribution's package manager.
+
+### Compilation
+
+```bash
+# Clone the repository
+git clone https://github.com
+cd gooblebox
+
+# Create and enter the build directory
+mkdir build && cd build
+
+# Configure and build the project
+cmake ..
+make
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

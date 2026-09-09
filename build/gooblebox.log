@@ -261,6 +261,7 @@
 [render/allocator/allocator.c:105] Trying to create gbm allocator
 [render/allocator/gbm.c:212] Created GBM allocator with backend drm
 [render/allocator/gbm.c:215] Using DRM node /dev/dri/card0
+[xcursor/wlr_xcursor.c:224] Loaded cursor theme 'default' at size 24 (62 available cursors)
 [backend/libinput/backend.c:88] Starting libinput backend
 [backend/libinput/events.c:69] Adding Power Button [0:1]
 [backend/libinput/events.c:69] Adding Video Bus [0:6]
@@ -298,3 +299,6 @@
 [render/swapchain.c:106] Allocating new swapchain buffer
 [render/allocator/gbm.c:144] Allocated 1440x900 GBM buffer with format XR24 (0x34325258), modifier X_TILED (0x0100000000000001)
 [render/gles2/renderer.c:158] Created GL FBO for buffer 1440x900
+[render/swapchain.c:106] Allocating new swapchain buffer
+[render/allocator/gbm.c:144] Allocated 64x64 GBM buffer with format AR24 (0x34325241), modifier LINEAR (0x0000000000000000)
+[render/gles2/renderer.c:158] Created GL FBO for buffer 64x64

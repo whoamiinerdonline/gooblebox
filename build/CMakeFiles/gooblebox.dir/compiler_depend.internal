@@ -92,6 +92,7 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o
  /usr/include/c++/14/concepts
  /usr/include/c++/14/cstdarg
  /usr/include/c++/14/cstddef
+ /usr/include/c++/14/cstdint
  /usr/include/c++/14/cstdio
  /usr/include/c++/14/cstdlib
  /usr/include/c++/14/cwchar
@@ -179,13 +180,19 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o
  /usr/include/wlroots-0.18/wlr/render/wlr_renderer.h
  /usr/include/wlroots-0.18/wlr/render/wlr_texture.h
  /usr/include/wlroots-0.18/wlr/types/wlr_buffer.h
+ /usr/include/wlroots-0.18/wlr/types/wlr_cursor.h
  /usr/include/wlroots-0.18/wlr/types/wlr_input_device.h
  /usr/include/wlroots-0.18/wlr/types/wlr_keyboard.h
  /usr/include/wlroots-0.18/wlr/types/wlr_output.h
  /usr/include/wlroots-0.18/wlr/types/wlr_output_layout.h
+ /usr/include/wlroots-0.18/wlr/types/wlr_pointer.h
+ /usr/include/wlroots-0.18/wlr/types/wlr_seat.h
+ /usr/include/wlroots-0.18/wlr/types/wlr_xcursor_manager.h
  /usr/include/wlroots-0.18/wlr/util/addon.h
  /usr/include/wlroots-0.18/wlr/util/box.h
+ /usr/include/wlroots-0.18/wlr/util/edges.h
  /usr/include/wlroots-0.18/wlr/util/log.h
+ /usr/include/wlroots-0.18/wlr/xcursor.h
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h
  /usr/include/x86_64-linux-gnu/bits/byteswap.h
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h

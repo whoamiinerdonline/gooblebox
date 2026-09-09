@@ -1,10 +1,13 @@
 #include <cstddef>
+#include <cstdint>
 #include <iostream>
 #include <list>
 #include <memory>
 #include <vector>
 #include <cstdio>
 #include <cstdarg>
+#include <wayland-server-protocol.h>
+
 extern "C" {
     #include <wayland-server.h>
     #include <wayland-server-core.h>
@@ -21,13 +24,19 @@ extern "C" {
     #include <wlr/types/wlr_input_device.h>
     #include <wlr/types/wlr_keyboard.h>
     #include <xkbcommon/xkbcommon.h>
+
+    // for cursor and seat
+    #include <wlr/types/wlr_cursor.h>
+    #include <wlr/types/wlr_xcursor_manager.h>
+    #include <wlr/types/wlr_seat.h>
+    #include <wlr/types/wlr_pointer.h>
 }
 
 static FILE *log_file = nullptr;
 
 static void log_callback(wlr_log_importance importance, const char *fmt, va_list args) {
     if (!log_file) {
-        log_file = fopen("gooblebox.log", "w"); // режим "w" очищает файл
+        log_file = fopen("gooblebox.log", "w");
         if (!log_file) {
             fprintf(stderr, "Failed to open log file\n");
             return;
@@ -46,18 +55,23 @@ private:
     struct wlr_backend *backend;
     struct wlr_renderer *render;
     struct wlr_output_layout *layout;
-    wl_listener new_output_listener;
     struct wlr_allocator *allocator;
 
     wl_listener new_input_listener;
+    wl_listener new_output_listener;
+
+    // cursor
+    struct wlr_cursor *cursor;
+    struct wlr_xcursor_manager *cursor_mgr;
+    struct wlr_seat *seat;
 
     static void newOutputHandler(wl_listener *listener, void *data);
     static void frameHandler(wl_listener *listener, void *data);
-
     static void newInputHandler(wl_listener *listener, void *data);
     static void keyboardKeyHandler(wl_listener *listener, void *data);
+    static void pointerMotionHandler(wl_listener *listener, void *data);
 
-    struct keyboard_state{
+    struct keyboard_state {
         struct wlr_keyboard *key;
         wl_listener key_listener;
     };
@@ -67,8 +81,15 @@ private:
         wl_listener frame_listen;
     };
 
+    struct pointer_state {
+        struct wlr_pointer *pointer;
+        wl_listener motion_listener;
+    };
+
     std::list<output_state> outputs;
     std::list<keyboard_state> keys;
+    std::list<pointer_state> pointers;
+
 public:
     bool init() {
         display = wl_display_create();
@@ -101,6 +122,16 @@ public:
             return false;
         }
 
+        cursor = wlr_cursor_create();
+        wlr_cursor_attach_output_layout(cursor, layout);
+
+        cursor_mgr = wlr_xcursor_manager_create("default", 24);
+        wlr_xcursor_manager_load(cursor_mgr, 1.0);
+
+        seat = wlr_seat_create(display, "seat0");
+        uint32_t caps = WL_SEAT_CAPABILITY_POINTER | WL_SEAT_CAPABILITY_KEYBOARD;
+        wlr_seat_set_capabilities(seat, caps);
+
         new_output_listener.notify = &compositor::newOutputHandler;
         wl_signal_add(&backend->events.new_output, &new_output_listener);
 
@@ -119,6 +150,10 @@ public:
     }
 
     ~compositor() {
+        if (seat) wlr_seat_destroy(seat);
+        if (cursor_mgr) wlr_xcursor_manager_destroy(cursor_mgr);
+        if (cursor) wlr_cursor_destroy(cursor);
+
         wlr_output_layout_destroy(layout);
         wlr_renderer_destroy(render);
         wlr_backend_destroy(backend);
@@ -182,9 +217,8 @@ void compositor::frameHandler(wl_listener *listener, void *data) {
         .color = {0.2f, 0.2f, 0.2f, 1.0f}
     };
     wlr_render_pass_add_rect(pass, &rect_options);
+
     wlr_render_pass_submit(pass);
-
-
     wlr_output_commit_state(output, &state);
     wlr_output_state_finish(&state);
 }
@@ -192,7 +226,6 @@ void compositor::frameHandler(wl_listener *listener, void *data) {
 void compositor::newInputHandler(wl_listener *listener, void *data) {
     struct wlr_input_device *device = static_cast<struct wlr_input_device *>(data);
 
-    // whileonly keyboards
     if (device->type == WLR_INPUT_DEVICE_KEYBOARD) {
         struct wlr_keyboard *keyboard = wlr_keyboard_from_input_device(device);
 
@@ -209,6 +242,18 @@ void compositor::newInputHandler(wl_listener *listener, void *data) {
 
         wl_signal_add(&keyboard->events.key, &ks.key_listener);
     }
+    else if (device->type == WLR_INPUT_DEVICE_POINTER) {
+        struct wlr_pointer *pointer = wlr_pointer_from_input_device(device);
+
+        wlr_cursor_attach_input_device(g_compositor->cursor, device);
+
+        g_compositor->pointers.emplace_back();
+        pointer_state& ps = g_compositor->pointers.back();
+        ps.pointer = pointer;
+        ps.motion_listener.notify = &compositor::pointerMotionHandler;
+
+        wl_signal_add(&pointer->events.motion, &ps.motion_listener);
+    }
 }
 
 void compositor::keyboardKeyHandler(wl_listener *listener, void *data) {
@@ -223,7 +268,6 @@ void compositor::keyboardKeyHandler(wl_listener *listener, void *data) {
     }
     if (!keyboard) return;
 
-    // только на нажатие (не на отпускание)
     if (event->state == WL_KEYBOARD_KEY_STATE_PRESSED) {
         uint32_t keycode = event->keycode + 8;
         const xkb_keysym_t *syms;
@@ -236,6 +280,26 @@ void compositor::keyboardKeyHandler(wl_listener *listener, void *data) {
             }
         }
     }
+}
+
+void compositor::pointerMotionHandler(wl_listener *listener, void *data) {
+    struct wlr_pointer_motion_event *event = static_cast<struct wlr_pointer_motion_event *>(data);
+
+    struct wlr_pointer *pointer = nullptr;
+    for (auto& ps : g_compositor->pointers) {
+        if (&ps.motion_listener == listener) {
+            pointer = ps.pointer;
+            break;
+        }
+    }
+    if (!pointer) return;
+
+    wlr_cursor_move(g_compositor->cursor, &pointer->base, event->delta_x, event->delta_y);
+
+    wlr_cursor_set_xcursor(g_compositor->cursor, g_compositor->cursor_mgr, "left_ptr");
+
+    wlr_seat_pointer_notify_motion(g_compositor->seat, event->time_msec,
+                                   g_compositor->cursor->x, g_compositor->cursor->y);
 }
 
 int main() {
