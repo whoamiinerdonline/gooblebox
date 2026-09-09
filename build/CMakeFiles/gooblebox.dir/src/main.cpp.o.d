@@ -159,15 +159,32 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: \
  /usr/include/c++/14/bits/locale_facets.tcc \
  /usr/include/c++/14/bits/basic_ios.tcc \
  /usr/include/c++/14/bits/ostream.tcc /usr/include/c++/14/istream \
- /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/vector \
+ /usr/include/c++/14/bits/istream.tcc /usr/include/c++/14/list \
+ /usr/include/c++/14/bits/stl_list.h \
+ /usr/include/c++/14/bits/allocated_ptr.h \
+ /usr/include/c++/14/ext/aligned_buffer.h \
+ /usr/include/c++/14/bits/list.tcc /usr/include/c++/14/memory \
+ /usr/include/c++/14/bits/stl_tempbuf.h \
  /usr/include/c++/14/bits/stl_uninitialized.h \
- /usr/include/c++/14/bits/stl_vector.h \
- /usr/include/c++/14/bits/stl_bvector.h \
- /usr/include/c++/14/bits/vector.tcc /usr/include/wayland-server.h \
+ /usr/include/c++/14/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/14/bits/align.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /usr/include/wayland-server-core.h \
+ /usr/include/c++/14/bits/unique_ptr.h \
+ /usr/include/c++/14/bits/shared_ptr.h \
+ /usr/include/c++/14/bits/shared_ptr_base.h \
+ /usr/include/c++/14/ext/concurrence.h \
+ /usr/include/c++/14/bits/shared_ptr_atomic.h \
+ /usr/include/c++/14/bits/atomic_base.h \
+ /usr/include/c++/14/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/14/backward/auto_ptr.h \
+ /usr/include/c++/14/pstl/glue_memory_defs.h \
+ /usr/include/c++/14/pstl/execution_defs.h /usr/include/c++/14/vector \
+ /usr/include/c++/14/bits/stl_vector.h \
+ /usr/include/c++/14/bits/stl_bvector.h \
+ /usr/include/c++/14/bits/vector.tcc /usr/include/c++/14/cstdarg \
+ /usr/include/wayland-server.h /usr/include/wayland-server-core.h \
  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdbool.h \
  /usr/include/wayland-util.h /usr/include/c++/14/math.h \
  /usr/include/c++/14/cmath /usr/include/math.h \
@@ -207,6 +224,7 @@ CMakeFiles/gooblebox.dir/src/main.cpp.o: \
  /usr/include/wlroots-0.18/wlr/render/dmabuf.h \
  /usr/include/wlroots-0.18/wlr/types/wlr_buffer.h \
  /usr/include/wlroots-0.18/wlr/util/addon.h \
+ /usr/include/wlroots-0.18/wlr/render/allocator.h \
  /usr/include/wlroots-0.18/wlr/util/log.h /usr/include/string.h \
  /usr/include/strings.h \
  /usr/include/wlroots-0.18/wlr/types/wlr_output_layout.h

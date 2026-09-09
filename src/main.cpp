@@ -16,6 +16,11 @@ extern "C" {
     #include <wlr/types/wlr_output_layout.h>
     #include <wlr/render/pass.h>
     #include <wlr/util/box.h>
+
+    // for key
+    #include <wlr/types/wlr_input_device.h>
+    #include <wlr/types/wlr_keyboard.h>
+    #include <xkbcommon/xkbcommon.h>
 }
 
 static FILE *log_file = nullptr;
@@ -44,8 +49,18 @@ private:
     wl_listener new_output_listener;
     struct wlr_allocator *allocator;
 
+    wl_listener new_input_listener;
+
     static void newOutputHandler(wl_listener *listener, void *data);
     static void frameHandler(wl_listener *listener, void *data);
+
+    static void newInputHandler(wl_listener *listener, void *data);
+    static void keyboardKeyHandler(wl_listener *listener, void *data);
+
+    struct keyboard_state{
+        struct wlr_keyboard *key;
+        wl_listener key_listener;
+    };
 
     struct output_state {
         struct wlr_output *output;
@@ -53,6 +68,7 @@ private:
     };
 
     std::list<output_state> outputs;
+    std::list<keyboard_state> keys;
 public:
     bool init() {
         display = wl_display_create();
@@ -87,6 +103,9 @@ public:
 
         new_output_listener.notify = &compositor::newOutputHandler;
         wl_signal_add(&backend->events.new_output, &new_output_listener);
+
+        new_input_listener.notify = &compositor::newOutputHandler;
+        wl_signal_add(&backend->events.new_input, &new_input_listener);
 
         g_compositor = this;
 
@@ -168,6 +187,55 @@ void compositor::frameHandler(wl_listener *listener, void *data) {
 
     wlr_output_commit_state(output, &state);
     wlr_output_state_finish(&state);
+}
+
+void compositor::newInputHandler(wl_listener *listener, void *data) {
+    struct wlr_input_device *device = static_cast<struct wlr_input_device *>(data);
+
+    // whileonly keyboards
+    if (device->type == WLR_INPUT_DEVICE_KEYBOARD) {
+        struct wlr_keyboard *keyboard = wlr_keyboard_from_input_device(device);
+
+        struct xkb_context *context = xkb_context_new(XKB_CONTEXT_NO_FLAGS);
+        struct xkb_keymap *keymap = xkb_keymap_new_from_names(context, nullptr, XKB_KEYMAP_COMPILE_NO_FLAGS);
+        wlr_keyboard_set_keymap(keyboard, keymap);
+        xkb_keymap_unref(keymap);
+        xkb_context_unref(context);
+
+        g_compositor->keys.emplace_back();
+        keyboard_state& ks = g_compositor->keys.back();
+        ks.key = keyboard;
+        ks.key_listener.notify = &compositor::keyboardKeyHandler;
+
+        wl_signal_add(&keyboard->events.key, &ks.key_listener);
+    }
+}
+
+void compositor::keyboardKeyHandler(wl_listener *listener, void *data) {
+    struct wlr_keyboard_key_event *event = static_cast<struct wlr_keyboard_key_event *>(data);
+    struct wlr_keyboard *keyboard = nullptr;
+
+    for (auto& ks : g_compositor->keys) {
+        if (&ks.key_listener == listener) {
+            keyboard = ks.key;
+            break;
+        }
+    }
+    if (!keyboard) return;
+
+    // только на нажатие (не на отпускание)
+    if (event->state == WL_KEYBOARD_KEY_STATE_PRESSED) {
+        uint32_t keycode = event->keycode + 8;
+        const xkb_keysym_t *syms;
+        int nsyms = xkb_state_key_get_syms(keyboard->xkb_state, keycode, &syms);
+
+        for (int i = 0; i < nsyms; i++) {
+            if (syms[i] == XKB_KEY_Escape) {
+                std::cerr << "Escape pressed, terminating compositor..." << std::endl;
+                wl_display_terminate(g_compositor->display);
+            }
+        }
+    }
 }
 
 int main() {
